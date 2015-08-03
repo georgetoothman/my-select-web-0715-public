@@ -1,9 +1,11 @@
 def my_select(array)
   new_array = []
   index = 0
-  while index < index
-    yield
-    new_array << array
+  while index < array.length
+    if yield(array[index])
+    new_array << array[index]
+    end
+    index += 1
   end
   new_array
 end
